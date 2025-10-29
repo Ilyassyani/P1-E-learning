@@ -5,11 +5,6 @@ body
     font-family: 'Inter', sans-serif;
 }
 
-.resize-animation-stopper * 
-{
-    animation: none !important;
-    transition: none !important;
-}
 
 p, h1, h2, h3, span 
 {
@@ -352,6 +347,7 @@ p, h1, h2, h3, span
     width: 18px;
     height: 18px;
 }
+
 .P1 
 {
     padding: 3rem 2rem;
@@ -454,291 +450,7 @@ p, h1, h2, h3, span
     margin-bottom: 8px;
 }
 
-@media screen and (max-width: 1200px) 
-{
-    .head1 
-    {
-        padding: 0 1.5rem;
-    }
-
-    .head1G 
-    {
-        gap: 1rem;
-    }
-
-    .head1G-item h1 
-    {
-        font-size: 14px;
-    }
-
-    .head2 
-    {
-        top: 130px;
-        width: 85%;
-        max-width: 700px;
-        gap: 1rem;
-        padding: 8px 12px;
-    }
-
-    .head2-filter 
-    {
-        gap: 2rem;
-        font-size: 13px;
-    }
-
-    .head3 
-    {
-        margin-top: 40px;
-        width: 85%;
-    }
-
-    .head3-title 
-    {
-        font-size: 56px;
-        line-height: 64px;
-    }
-
-    .P21 
-    {
-        width: 45%;
-        height: 500px;
-    }
-
-    .P21-img1 
-    {
-        width: 240px;
-        height: 300px;
-    }
-
-    .P21-img2 
-    {
-        width: 200px;
-        height: 250px;
-    }
-
-    .P21-img3 
-    {
-        width: 220px;
-        height: 270px;
-    }
-
-    .P22 
-    {
-        width: 55%;
-        padding-left: 1rem;
-    }
-
-    .P22-title 
-    {
-        font-size: 36px;
-    }
-
-    .P23 
-    {
-        gap: 2.5rem;
-        padding: 1.5rem 2rem;
-    }
-
-    .P23-stat h1 
-    {
-        font-size: 40px;
-    }
-
-}    
-
-
-@media screen and (max-width: 992px) 
-{
-    .head 
-    {
-        min-height: 100vh;
-    }
-
-    .head1G 
-    {
-        gap: 0.8rem;
-    }
-
-    .head1G-item h1 
-    {
-        font-size: 13px;
-    }
-
-    .head1D-btn 
-    {
-        width: 130px;
-        height: 42px;
-        font-size: 13px;
-    }
-
-    .head2 
-    {
-        position: absolute;
-        top: 120px;
-        left: 50%;
-        transform: translateX(-50%);
-        flex-direction: column;
-        gap: 0.8rem;
-        padding: 12px;
-        width: 90%;
-        max-width: 600px;
-    }
-
-    .head2-group 
-    {
-        width: 100%;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .head2-group hr 
-    {
-        display: none;
-    }
-
-    .head2-filter 
-    {
-        width: 100%;
-        justify-content: space-between;
-        padding: 10px 12px;
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        border-radius: 8px;
-    }
-
-    .head3 
-    {
-        position: absolute;
-        top: 58%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        margin: 0;
-        padding: 1rem;
-    }
-
-    .head3-title 
-    {
-        font-size: 48px;
-        line-height: 56px;
-    }
-
-    .head3-btn 
-    {
-        padding: 0.7rem 1.5rem;
-        font-size: 14px;
-    }
-
-    .P11 
-    {
-        padding: 0 1rem;
-    }
-
-    .P11G h1 
-    {
-        font-size: 36px;
-    }
-
-    .P12 
-    {
-        padding: 0 1rem;
-    }
-
-    .P12-card 
-    {
-        min-width: 90px;
-        height: 90px;
-        padding: 14px;
-        font-size: 0.8rem;
-    }
-
-    .P12-card img 
-    {
-        width: 32px;
-        height: 32px;
-    }
-
-    .P2 
-    {
-        flex-direction: column;
-        padding: 40px 1rem;
-        gap: 40px;
-        padding-bottom: 10rem;
-    }
-
-    .P21 
-    {
-        width: 100%;
-        height: 450px;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .P21-img1 
-    {
-        left: 20px;
-        width: 220px;
-        height: 280px;
-    }
-
-    .P21-img2 
-    {
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 20px;
-        width: 200px;
-        height: 250px;
-    }
-
-    .P21-img3 
-    {
-        right: 20px;
-        width: 200px;
-        height: 260px;
-    }
-
-    .P22 
-    {
-        width: 100%;
-        padding-left: 0;
-        text-align: center;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .P22-title 
-    {
-        font-size: 32px;
-    }
-
-    .P22-item 
-    {
-        text-align: left;
-    }
-
-    .P23 
-    {
-        position: static;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: 3rem;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        transform: none;
-    }
-
-    .P23-stat 
-    {
-        min-width: 150px;
-    }
-
-    .P23-stat h1 
-    {
-        font-size: 38px;
-    }
-}
-
+/* ========== P2 - ABOUT/FEATURES SECTION ========== */
 .P2 
 {
     position: relative;
@@ -931,6 +643,601 @@ p, h1, h2, h3, span
     letter-spacing: 1px;
 }
 
+/* ========== P3 - COMMENT ÇA MARCHE + TÉMOIGNAGES ========== */
+.P3 
+{
+    padding: 4rem 2rem;
+    background-color: #F7FAFC;
+}
+
+.P31 
+{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.P31-title 
+{
+    font-size: 42px;
+    font-weight: 700;
+    color: #1A202C;
+    margin-bottom: 1rem;
+}
+
+.P31-subtitle 
+{
+    font-size: 18px;
+    color: #4A5568;
+    font-weight: 400;
+}
+
+.P32 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-bottom: 5rem;
+}
+
+.P32-step 
+{
+    background-color: white;
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.P32-step:hover 
+{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+}
+
+.P32-step-icon 
+{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.P32-step-icon img 
+{
+    width: 40px;
+    height: 40px;
+}
+
+.P32-step-title 
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A202C;
+    margin-bottom: 1rem;
+}
+
+.P32-step-text 
+{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4A5568;
+}
+
+.P33 
+{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.P33-title 
+{
+    font-size: 36px;
+    font-weight: 700;
+    color: #1A202C;
+}
+
+.P34 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.P34-card 
+{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.P34-card:hover 
+{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.P34-card-header 
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.P34-card-img 
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.P34-card-info h4 
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A202C;
+    margin-bottom: 0.25rem;
+}
+
+.P34-card-info span 
+{
+    font-size: 13px;
+    color: #718096;
+}
+
+.P34-card-text 
+{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4A5568;
+    margin-bottom: 1rem;
+}
+
+.P34-card-rating 
+{
+    font-size: 16px;
+}
+
+/* ========== HR ========== */
+hr 
+{
+    border: none;
+    border-top: 1px solid #E2E8F0;
+    margin: 4rem 0;
+}
+
+/* ========== FOOTER ========== */
+.footer 
+{
+    background-color: #1A202C;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.footer-left 
+{
+    max-width: 400px;
+}
+
+.footer-logo 
+{
+    margin-bottom: 1rem;
+}
+
+.footer-logo img 
+{
+    height: 40px;
+    width: auto;
+}
+
+.footer-desc 
+{
+    font-size: 14px;
+    color: #CBD5E0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.footer-socials 
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-socials a 
+{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover 
+{
+    background-color: #667eea;
+    transform: translateY(-3px);
+}
+
+.footer-socials img 
+{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-right 
+{
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-col h3 
+{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.footer-col ul 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col li 
+{
+    margin-bottom: 0.75rem;
+}
+
+.footer-col a 
+{
+    font-size: 14px;
+    color: #CBD5E0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col a:hover 
+{
+    color: #667eea;
+}
+
+.footer-bottom 
+{
+    background-color: #171923;
+    color: #CBD5E0;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 14px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Tablettes en paysage et petits desktop */
+@media screen and (max-width: 1200px) 
+{
+    .head1 
+    {
+        padding: 0 1.5rem;
+    }
+
+    .head1G 
+    {
+        gap: 1rem;
+    }
+
+    .head1G-item h1 
+    {
+        font-size: 14px;
+    }
+
+    .head2 
+    {
+        top: 130px;
+        width: 85%;
+        max-width: 700px;
+        gap: 1rem;
+        padding: 8px 12px;
+    }
+
+    .head2-filter 
+    {
+        gap: 2rem;
+        font-size: 13px;
+    }
+
+    .head3 
+    {
+        margin-top: 40px;
+        width: 85%;
+    }
+
+    .head3-title 
+    {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .P21 
+    {
+        width: 45%;
+        height: 500px;
+    }
+
+    .P21-img1 
+    {
+        width: 240px;
+        height: 300px;
+    }
+
+    .P21-img2 
+    {
+        width: 200px;
+        height: 250px;
+    }
+
+    .P21-img3 
+    {
+        width: 220px;
+        height: 270px;
+    }
+
+    .P22 
+    {
+        width: 55%;
+        padding-left: 1rem;
+    }
+
+    .P22-title 
+    {
+        font-size: 36px;
+    }
+
+    .P23 
+    {
+        gap: 2.5rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .P23-stat h1 
+    {
+        font-size: 40px;
+    }
+}
+
+/* Tablettes portrait */
+@media screen and (max-width: 992px) 
+{
+    .head 
+    {
+        min-height: 100vh;
+    }
+
+    .head1G 
+    {
+        gap: 0.8rem;
+    }
+
+    .head1G-item h1 
+    {
+        font-size: 13px;
+    }
+
+    .head1D-btn 
+    {
+        width: 130px;
+        height: 42px;
+        font-size: 13px;
+    }
+
+    .head2 
+    {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        gap: 0.8rem;
+        padding: 12px;
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .head2-group 
+    {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .head2-group hr 
+    {
+        display: none;
+    }
+
+    .head2-filter 
+    {
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 8px;
+    }
+
+    .head3 
+    {
+        position: absolute;
+        top: 58%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .head3-title 
+    {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .head3-btn 
+    {
+        padding: 0.7rem 1.5rem;
+        font-size: 14px;
+    }
+
+    .P11 
+    {
+        padding: 0 1rem;
+    }
+
+    .P11G h1 
+    {
+        font-size: 36px;
+    }
+
+    .P12 
+    {
+        padding: 0 1rem;
+    }
+
+    .P12-card 
+    {
+        min-width: 90px;
+        height: 90px;
+        padding: 14px;
+        font-size: 0.8rem;
+    }
+
+    .P12-card img 
+    {
+        width: 32px;
+        height: 32px;
+    }
+
+    .P2 
+    {
+        flex-direction: column;
+        padding: 40px 1rem;
+        gap: 40px;
+        padding-bottom: 10rem;
+    }
+
+    .P21 
+    {
+        width: 100%;
+        height: 450px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .P21-img1 
+    {
+        left: 20px;
+        width: 220px;
+        height: 280px;
+    }
+
+    .P21-img2 
+    {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+        width: 200px;
+        height: 250px;
+    }
+
+    .P21-img3 
+    {
+        right: 20px;
+        width: 200px;
+        height: 260px;
+    }
+
+    .P22 
+    {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .P22-title 
+    {
+        font-size: 32px;
+    }
+
+    .P22-item 
+    {
+        text-align: left;
+    }
+
+    .P23 
+    {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 3rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        transform: none;
+    }
+
+    .P23-stat 
+    {
+        min-width: 150px;
+    }
+
+    .P23-stat h1 
+    {
+        font-size: 38px;
+    }
+
+    .P32 
+    {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .P34 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .footer 
+    {
+        flex-direction: column;
+    }
+
+    .footer-right 
+    {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+/* Petites tablettes et grands mobiles */
 @media screen and (max-width: 768px) 
 {
     .head 
@@ -1395,7 +1702,53 @@ p, h1, h2, h3, span
         font-size: 11px;
     }
 
+    .P3 
+    {
+        padding: 3rem 1rem;
+    }
 
+    .P31-title 
+    {
+        font-size: 32px;
+    }
+
+    .P31-subtitle 
+    {
+        font-size: 16px;
+    }
+
+    .P32 
+    {
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
+        gap: 1.5rem;
+    }
+
+    .P33-title 
+    {
+        font-size: 28px;
+    }
+
+    .P34 
+    {
+        padding: 0 0.5rem;
+    }
+
+    hr 
+    {
+        margin: 3rem 1rem;
+    }
+
+    .footer 
+    {
+        padding: 2rem 1rem;
+    }
+
+    .footer-right 
+    {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) 
@@ -1440,7 +1793,7 @@ p, h1, h2, h3, span
     {
         font-size: 32px;
     }
-    
+
     .P11 
     {
         flex-direction: column;
@@ -1486,4 +1839,14 @@ p, h1, h2, h3, span
     {
         font-size: 32px;
     }
-}    
+
+    .P31-title 
+    {
+        font-size: 28px;
+    }
+
+    .P33-title 
+    {
+        font-size: 24px;
+    }
+}
