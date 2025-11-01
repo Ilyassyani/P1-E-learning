@@ -130,6 +130,7 @@ p, h1, h2, h3, span
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
+    color: white;
 }
 
 .head1D-sign img 
@@ -329,14 +330,13 @@ p, h1, h2, h3, span
 }
 
 .head3-btn-secondary {
-    background-color: white;
-    color: #1A202C;
+    background-color: inherit;
+    color: white;
     border: 2px solid white;
     text-decoration: none;
 }
 
 .head3-btn-secondary:hover {
-    background-color: #f0f0f0;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -347,14 +347,12 @@ p, h1, h2, h3, span
     height: 18px;
 }
 
-/* Remove underlines from ALL links in header and buttons */
 .head1G a,
 .head3-buttons a,
 .head1D a {
     text-decoration: none !important;
 }
 
-/* Specifically target contact links */
 a[href="./contact.html"] {
     text-decoration: none !important;
 }
