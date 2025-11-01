@@ -70,8 +70,7 @@ p, h1, h2, h3, span
     gap: 5px;
 }
 
-.head1G-item h1 
-{
+.head1G-item h1 {
     font-weight: 500;
     font-size: 15px;
     line-height: 27.75px;
@@ -79,6 +78,8 @@ p, h1, h2, h3, span
     text-transform: capitalize;
     cursor: pointer;
     transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
 }
 
 .head1G-item h1:hover 
@@ -327,17 +328,15 @@ p, h1, h2, h3, span
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.head3-btn-secondary 
-{
-    background-color: transparent;
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+.head3-btn-secondary {
+    background-color: white;
+    color: #1A202C;
+    border: 2px solid white;
+    text-decoration: none;
 }
 
-.head3-btn-secondary:hover 
-{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: white;
+.head3-btn-secondary:hover {
+    background-color: #f0f0f0;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -346,6 +345,18 @@ p, h1, h2, h3, span
 {
     width: 18px;
     height: 18px;
+}
+
+/* Remove underlines from ALL links in header and buttons */
+.head1G a,
+.head3-buttons a,
+.head1D a {
+    text-decoration: none !important;
+}
+
+/* Specifically target contact links */
+a[href="./contact.html"] {
+    text-decoration: none !important;
 }
 
 .P1 
