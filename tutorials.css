@@ -1,0 +1,188 @@
+/* Styles spécifiques pour la page tutoriels */
+
+.head3-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Conteneur des tutoriels */
+.tutoriels-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    margin-top: 3rem;
+}
+
+/* Cartes de tutoriels */
+.tutoriel-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.tutoriel-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+}
+
+/* Badges de catégorie */
+.tutoriel-badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+.methodo-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.maths-badge { background: linear-gradient(135deg, #F56565 0%, #E53E3E 100%); }
+.physique-badge { background: linear-gradient(135deg, #ED8936 0%, #DD6B20 100%); }
+.info-badge { background: linear-gradient(135deg, #38B2AC 0%, #319795 100%); }
+.langues-badge { background: linear-gradient(135deg, #4299E1 0%, #3182CE 100%); }
+.reussite-badge { background: linear-gradient(135deg, #48BB78 0%, #38A169 100%); }
+
+/* Icônes des tutoriels */
+.tutoriel-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutoriel-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Titre des tutoriels */
+.tutoriel-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A202C;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+/* Description des tutoriels */
+.tutoriel-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4A5568;
+    margin-bottom: 1.5rem;
+}
+
+/* Métadonnées des tutoriels */
+.tutoriel-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 12px;
+}
+
+.tutoriel-duration {
+    color: #718096;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.tutoriel-level {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.tutoriel-level.beginner {
+    background: #E6FFFA;
+    color: #234E52;
+}
+
+.tutoriel-level.intermediate {
+    background: #EBF8FF;
+    color: #1A365D;
+}
+
+.tutoriel-level.all-levels {
+    background: #F0FFF4;
+    color: #22543D;
+}
+
+/* Bouton des tutoriels */
+.tutoriel-btn {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.tutoriel-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .tutoriels-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .tutoriel-card {
+        padding: 1.5rem;
+    }
+
+    .head3-subtitle {
+        font-size: 16px;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tutoriels-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tutoriel-card {
+        padding: 1.25rem;
+    }
+
+    .tutoriel-title {
+        font-size: 18px;
+    }
+
+    .tutoriel-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tutoriel-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
