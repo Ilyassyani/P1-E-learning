@@ -1,0 +1,85 @@
+/* ============= SECTION À PROPOS ============= */
+.apropos-section {
+    background-color: #F7FAFC;
+    min-height: 100vh;
+}
+
+/* Hero À Propos */
+.apropos-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.apropos-hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.apropos-hero-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+/* Mission & Vision */
+.apropos-mission {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.apropos-mission-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.apropos-mission-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+}
+
+.apropos-mission-icon {
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+}
+
+.apropos-mission-card h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1A202C;
+    margin-bottom: 1rem;
+}
+
+.apropos-mission-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4A5568;
+}
+
+/* Histoire */
+.apropos-histoire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.apropos-section-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1A202C;
+    margin-bottom: 2rem;
+}

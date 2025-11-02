@@ -1,4 +1,5 @@
 
+
 const toggle = document.getElementById('toggle');
 const menu = document.querySelector('.head1G');
 const closeBtn = document.getElementById('close');
@@ -30,3 +31,5 @@ menuItems.forEach(item =>
         }
     });
 });
+
+
