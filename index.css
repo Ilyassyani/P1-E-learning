@@ -13,6 +13,11 @@ p, h1, h2, h3, span
     letter-spacing: 0%;
     margin: 0;
 }
+a
+{
+    text-decoration: none;
+    color: white;
+}
 .head 
 {
     position: relative;
