@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriels - StudyHub</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./tutoriels.css">
+    <title>Tutoriels - Aide aux Études Universitaires</title>
+    <link rel="stylesheet" href="./tutorials.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -45,7 +44,7 @@
                         <h1>Tutoriels</h1>
                     </div>
                 </a>
-                <a href="./àpropos.html">
+                <a href="./Apropos.html">
                     <div class="head1G-item"><h1>À propos</h1></div>
                 </a>
                 <a href="./contact.html">
@@ -68,251 +67,240 @@
             </div>
         </div>
         
-        <div class="head2">
-            <div class="head2-group">
-                <div class="head2-filter">
-                    <span>Toutes les catégories</span>
-                    <img src="./Integration/flechebas.png" alt="dropdown">
-                </div>
-                <hr>
-                <div class="head2-filter">
-                    <span>Niveau de difficulté</span>
-                    <img src="./Integration/flechebas.png" alt="dropdown">
-                </div>
-                <hr>
-                <div class="head2-filter">
-                    <span>Type de tutoriel</span>
-                    <img src="./Integration/flechebas.png" alt="dropdown">
-                </div>
-            </div>
-            <button class="head2-btn">
-                <img src="./Integration/rechercher.png" alt="search icon" class="head2-btn-icon">
-                <span>Rechercher</span>
-            </button>
-        </div>
-        
         <div class="head3">
-            <h1 class="head3-title">Maîtrisez les Méthodes de Travail</h1>
-            <p class="head3-subtitle">Des tutoriels pratiques pour exceller dans vos études</p>
+            <h1 class="head3-title">Tutoriels Vidéo</h1>
+            <p class="head3-subtitle">Apprenez avec nos guides étape par étape</p>
         </div>
     </div>
 
-    <!-- Section Catégories de Tutoriels -->
-    <div class="P1">
-        <div class="P11">
-            <div class="P11G">
-                <h1>Catégories de Tutoriels</h1>
+    <div class="filters-section">
+        <div class="filters-container">
+            <div class="filter-group">
+                <label>Catégorie</label>
+                <select class="filter-select">
+                    <option value="all">Toutes les catégories</option>
+                    <option value="math">Mathématiques</option>
+                    <option value="physique">Physique</option>
+                    <option value="chimie">Chimie</option>
+                    <option value="info">Informatique</option>
+                    <option value="bio">Biologie</option>
+                    <option value="eco">Économie</option>
+                </select>
             </div>
-        </div>
-        
-        <div class="P12">
-            <div class="P12-grid">
-                <button class="P12-card">
-                    <img src="./Integration/Methodo.png" alt="Méthodologie">
-                    <span>Méthodologie</span>
-                </button>
-                <button class="P12-card">
-                    <img src="./Integration/Math.png" alt="Mathématiques">
-                    <span>Mathématiques</span>
-                </button>
-                <button class="P12-card">
-                    <img src="./Integration/Physique.png" alt="Physique">
-                    <span>Physique</span>
-                </button>
-                <button class="P12-card">
-                    <img src="./Integration/Info.png" alt="Informatique">
-                    <span>Informatique</span>
-                </button>
-                <button class="P12-card">
-                    <img src="./Integration/Langues.png" alt="Langues">
-                    <span>Langues</span>
-                </button>
-                <button class="P12-card">
-                    <img src="./Integration/Reussite.png" alt="Réussite">
-                    <span>Réussite</span>
-                </button>
+            
+            <div class="filter-group">
+                <label>Niveau</label>
+                <select class="filter-select">
+                    <option value="all">Tous les niveaux</option>
+                    <option value="debutant">Débutant</option>
+                    <option value="intermediaire">Intermédiaire</option>
+                    <option value="avance">Avancé</option>
+                </select>
             </div>
-        </div>
-    </div>
-
-    <!-- Section Tutoriels Populaires -->
-    <div class="P3">
-        <div class="P31">
-            <h1 class="P31-title">Tutoriels Populaires</h1>
-            <p class="P31-subtitle">Les méthodes les plus recherchées par les étudiants</p>
-        </div>
-
-        <div class="tutoriels-grid">
-            <!-- Tutoriel 1 -->
-            <div class="tutoriel-card">
-                <div class="tutoriel-badge">Méthodologie</div>
-                <div class="tutoriel-image">
-                    <img src="./Integration/tuto-notes.jpg" alt="Prise de notes">
-                </div>
-                <div class="tutoriel-content">
-                    <h3 class="tutoriel-title">La Méthode Cornell pour des Notes Parfaites</h3>
-                    <p class="tutoriel-desc">Apprenez à organiser vos notes de cours pour une révision efficace.</p>
-                    <div class="tutoriel-meta">
-                        <span class="tutoriel-duration">⏱️ 15 min</span>
-                        <span class="tutoriel-level">Débutant</span>
-                    </div>
-                    <button class="tutoriel-btn">Voir le tutoriel</button>
-                </div>
-            </div>
-
-            <!-- Tutoriel 2 -->
-            <div class="tutoriel-card">
-                <div class="tutoriel-badge">Mathématiques</div>
-                <div class="tutoriel-image">
-                    <img src="./Integration/tuto-maths.jpg" alt="Résolution problèmes">
-                </div>
-                <div class="tutoriel-content">
-                    <h3 class="tutoriel-title">Résoudre les Équations du Second Degré</h3>
-                    <p class="tutoriel-desc">Méthode complète avec exemples concrets et astuces.</p>
-                    <div class="tutoriel-meta">
-                        <span class="tutoriel-duration">⏱️ 25 min</span>
-                        <span class="tutoriel-level">Intermédiaire</span>
-                    </div>
-                    <button class="tutoriel-btn">Voir le tutoriel</button>
-                </div>
-            </div>
-
-            <!-- Tutoriel 3 -->
-            <div class="tutoriel-card">
-                <div class="tutoriel-badge">Informatique</div>
-                <div class="tutoriel-image">
-                    <img src="./Integration/tuto-excel.jpg" alt="Excel">
-                </div>
-                <div class="tutoriel-content">
-                    <h3 class="tutoriel-title">Maîtriser Excel en 7 Étapes</h3>
-                    <p class="tutoriel-desc">Formules essentielles et tableaux croisés dynamiques.</p>
-                    <div class="tutoriel-meta">
-                        <span class="tutoriel-duration">⏱️ 35 min</span>
-                        <span class="tutoriel-level">Tous niveaux</span>
-                    </div>
-                    <button class="tutoriel-btn">Voir le tutoriel</button>
-                </div>
-            </div>
-
-            <!-- Tutoriel 4 -->
-            <div class="tutoriel-card">
-                <div class="tutoriel-badge">Réussite</div>
-                <div class="tutoriel-image">
-                    <img src="./Integration/tuto-revision.jpg" alt="Révisions">
-                </div>
-                <div class="tutoriel-content">
-                    <h3 class="tutoriel-title">Techniques de Révision Efficaces</h3>
-                    <p class="tutoriel-desc">La méthode Pomodoro et l'espacement des révisions.</p>
-                    <div class="tutoriel-meta">
-                        <span class="tutoriel-duration">⏱️ 20 min</span>
-                        <span class="tutoriel-level">Débutant</span>
-                    </div>
-                    <button class="tutoriel-btn">Voir le tutoriel</button>
-                </div>
-            </div>
-
-            <!-- Tutoriel 5 -->
-            <div class="tutoriel-card">
-                <div class="tutoriel-badge">Langues</div>
-                <div class="tutoriel-image">
-                    <img src="./Integration/tuto-anglais.jpg" alt="Anglais">
-                </div>
-                <div class="tutoriel-content">
-                    <h3 class="tutoriel-title">Améliorez votre Anglais Académique</h3>
-                    <p class="tutoriel-desc">Vocabulaire et structures pour rédiger en anglais.</p>
-                    <div class="tutoriel-meta">
-                        <span class="tutoriel-duration">⏱️ 30 min</span>
-                        <span class="tutoriel-level">Intermédiaire</span>
-                    </div>
-                    <button class="tutoriel-btn">Voir le tutoriel</button>
-                </div>
-            </div>
-
-            <!-- Tutoriel 6 -->
-            <div class="tutoriel-card">
-                <div class="tutoriel-badge">Physique</div>
-                <div class="tutoriel-image">
-                    <img src="./Integration/tuto-physique.jpg" alt="Physique">
-                </div>
-                <div class="tutoriel-content">
-                    <h3 class="tutoriel-title">Comprendre les Lois de Newton</h3>
-                    <p class="tutoriel-desc">Applications pratiques et exercices résolus.</p>
-                    <div class="tutoriel-meta">
-                        <span class="tutoriel-duration">⏱️ 40 min</span>
-                        <span class="tutoriel-level">Intermédiaire</span>
-                    </div>
-                    <button class="tutoriel-btn">Voir le tutoriel</button>
-                </div>
+            
+            <div class="filter-group">
+                <label>Durée</label>
+                <select class="filter-select">
+                    <option value="all">Toutes durées</option>
+                    <option value="court">Moins de 10 min</option>
+                    <option value="moyen">10-30 min</option>
+                    <option value="long">Plus de 30 min</option>
+                </select>
             </div>
         </div>
     </div>
 
-    <!-- Section Méthodologie -->
-    <div class="P2">
-        <div class="P22">
-            <h1 class="P22-title">Boostez Votre<br>Efficacité Académique</h1>
-            <p class="P22-desc">Découvrez des méthodes éprouvées pour optimiser votre apprentissage</p>
-            <ul class="P22-list">
-                <li class="P22-item">
-                    <div class="P22-icon">
-                        <img src="./Integration/Check.png" alt="check">
-                    </div>
-                    <span class="P22-text">Techniques de mémorisation à long terme</span>
-                </li>
-                <li class="P22-item">
-                    <div class="P22-icon">
-                        <img src="./Integration/Check.png" alt="check">
-                    </div>
-                    <span class="P22-text">Méthodes de prise de notes efficaces</span>
-                </li>
-                <li class="P22-item">
-                    <div class="P22-icon">
-                        <img src="./Integration/Check.png" alt="check">
-                    </div>
-                    <span class="P22-text">Gestion du temps et planning de révision</span>
-                </li>
-            </ul>
-            <button class="P22-btn">
-                Explorer les méthodes
-                <img src="./Integration/Flechehaut.png" alt="arrow">
-            </button>
+    <div class="tutorials-section">
+        <div class="section-header">
+            <h2>Tutoriels Populaires</h2>
+            <span class="result-count">24 tutoriels disponibles</span>
         </div>
 
-        <div class="P21">
-            <img src="./Integration/tuto-methodo1.jpg" class="P21-img1" alt="Méthodologie 1">
-            <img src="./Integration/tuto-methodo2.jpg" class="P21-img2" alt="Méthodologie 2">
-            <img src="./Integration/tuto-methodo3.jpg" class="P21-img3" alt="Méthodologie 3">
+        <div class="tutorials-grid">
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Math.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">15:30</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category math">Mathématiques</div>
+                    <h3 class="tutorial-title">Introduction aux Dérivées</h3>
+                    <p class="tutorial-description">Comprendre les bases des dérivées et leurs applications pratiques</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty debutant">Débutant</span>
+                        <span class="views">2.3k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Physique.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">22:45</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category physique">Physique</div>
+                    <h3 class="tutorial-title">Les Lois de Newton</h3>
+                    <p class="tutorial-description">Maîtrisez les trois lois fondamentales de la mécanique</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty intermediaire">Intermédiaire</span>
+                        <span class="views">1.8k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Chimie.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">18:20</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category chimie">Chimie</div>
+                    <h3 class="tutorial-title">Équilibrer les Équations Chimiques</h3>
+                    <p class="tutorial-description">Techniques simples pour équilibrer n'importe quelle équation</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty debutant">Débutant</span>
+                        <span class="views">3.1k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Info.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">35:15</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category info">Informatique</div>
+                    <h3 class="tutorial-title">Algorithmes de Tri</h3>
+                    <p class="tutorial-description">Découvrez les principaux algorithmes de tri et leur complexité</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty avance">Avancé</span>
+                        <span class="views">4.2k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Biologie.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">12:40</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category bio">Biologie</div>
+                    <h3 class="tutorial-title">La Mitose Expliquée</h3>
+                    <p class="tutorial-description">Les étapes de la division cellulaire de manière simple</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty debutant">Débutant</span>
+                        <span class="views">2.7k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Economie.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">28:50</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category eco">Économie</div>
+                    <h3 class="tutorial-title">Offre et Demande</h3>
+                    <p class="tutorial-description">Comprendre le fonctionnement des marchés économiques</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty intermediaire">Intermédiaire</span>
+                        <span class="views">1.5k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Math.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">20:15</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category math">Mathématiques</div>
+                    <h3 class="tutorial-title">Intégrales Définies</h3>
+                    <p class="tutorial-description">Calcul d'aires et volumes avec les intégrales</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty avance">Avancé</span>
+                        <span class="views">1.9k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Langues.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">16:30</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category langues">Langues</div>
+                    <h3 class="tutorial-title">Grammaire Anglaise</h3>
+                    <p class="tutorial-description">Les temps verbaux anglais expliqués simplement</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty intermediaire">Intermédiaire</span>
+                        <span class="views">3.5k vues</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tutorial-card">
+                <div class="tutorial-thumbnail">
+                    <img src="./Integration/Info.png" alt="Thumbnail">
+                    <div class="play-overlay">
+                        <div class="play-button">▶</div>
+                    </div>
+                    <span class="duration-badge">25:00</span>
+                </div>
+                <div class="tutorial-content">
+                    <div class="tutorial-category info">Informatique</div>
+                    <h3 class="tutorial-title">Bases de Données SQL</h3>
+                    <p class="tutorial-description">Introduction aux requêtes SQL et gestion de données</p>
+                    <div class="tutorial-meta">
+                        <span class="difficulty debutant">Débutant</span>
+                        <span class="views">2.8k vues</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more">
+            <button class="load-more-btn">Charger plus de tutoriels</button>
         </div>
     </div>
 
-    <!-- Section Avantages -->
-    <div class="avantages-section">
-        <div class="P31">
-            <h1 class="P31-title">Pourquoi Nos Tutoriels ?</h1>
-            <p class="P31-subtitle">Une approche pratique pour des résultats concrets</p>
-        </div>
-
-        <div class="avantages-grid">
-            <div class="avantage-card">
-                <div class="avantage-icon">🎯</div>
-                <h3>Pratique & Concret</h3>
-                <p>Des exercices applicables immédiatement dans vos études</p>
-            </div>
-            <div class="avantage-card">
-                <div class="avantage-icon">⚡</div>
-                <h3>Rapide & Efficace</h3>
-                <p>Des tutoriels courts qui vont droit au but</p>
-            </div>
-            <div class="avantage-card">
-                <div class="avantage-icon">📊</div>
-                <h3>Résultats Mesurables</h3>
-                <p>Améliorez vos notes dès les premières applications</p>
-            </div>
-            <div class="avantage-card">
-                <div class="avantage-icon">👨‍🏫</div>
-                <h3>Experts Pédagogiques</h3>
-                <p>Des méthodes validées par des professionnels</p>
-            </div>
+    <div class="cta-section">
+        <div class="cta-content">
+            <h2>Besoin d'un Tutoriel Spécifique ?</h2>
+            <p>Demandez-nous de créer un tutoriel sur le sujet qui vous intéresse</p>
+            <a href="./contact.html">
+                <button class="cta-btn">Faire une demande</button>
+            </a>
         </div>
     </div>
 
@@ -337,7 +325,7 @@
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./cours.html">Cours</a></li>
                     <li><a href="./ressources.html">Ressources</a></li>
-                    <li><a href="./tutoriels.html">Tutoriels</a></li>
+                    <li><a href="./Apropos.html">À propos</a></li>
                 </ul>
             </div>
 
