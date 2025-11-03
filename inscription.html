@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="./inscription.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <div id="toggle" class="head1-toggle">
+            <div class="head1-rectangle"></div>
+            <div class="head1-rectangle"></div>
+            <div class="head1-rectangle"></div>
+        </div>
+        <span id="close" class="head1-close">✖</span>
+        
+        <div class="head-bg"></div>
+        
+        <div class="head1">
+            <div class="head1G">
+                <div class="head1G-item">
+                    <h1>Accueil</h1>
+                </div>
+                <div class="head1G-item">
+                    <h1>Cours</h1>
+                    <img src="./Integration/flechebas.png" alt="dropdown">
+                </div>
+                <div class="head1G-item">
+                    <h1>Ressources</h1>
+                    <img src="./Integration/flechebas.png" alt="dropdown">
+                </div>
+                <div class="head1G-item">
+                    <h1>Tutoriels</h1>
+                </div>
+                <div class="head1G-item"><h1>À propos</h1></div>
+                <div class="head1G-item"><h1>Contact</h1></div>
+            </div>
+            
+            <div class="head1C">
+                <img src="./Integration/Logo.png" alt="Logo StudyHub" class="head1C-logo">
+            </div>
+            
+            <div class="head1D">
+                <div class="head1D-sign">
+                    <img src="./Integration/connect.png" alt="user icon">
+                    <h1>Connexion</h1>
+                </div>
+                <button class="head1D-btn">S'inscrire</button>
+            </div>
+        </div>
+        
+        <div class="head2">
+
+            <form class="head2-form">
+                
+                <h2 class="head2-title">Inscription</h2>
+                <p class="head2-subtitle">Créez votre compte pour accéder à toutes les ressources</p>
+                <div class="head2A">
+                    <div class="head2G">
+                        <div class="form-group">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="telephone">Numéro de téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="+212 6XX XXX XXX" required>
+                        </div>
+                    </div>
+                    <div class="head2D">
+                        <div class="form-group">
+                            <label for="universite">Université</label>
+                            <input type="text" id="universite" name="universite" placeholder="Nom de votre université" required>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="niveau">Niveau d'études</label>
+                            <select id="niveau" name="niveau" required>
+                                <option value="">Sélectionnez votre niveau</option>
+                                <option value="licence1">Licence 1</option>
+                                <option value="licence2">Licence 2</option>
+                                <option value="licence3">Licence 3</option>
+                                <option value="master1">Master 1</option>
+                                <option value="master2">Master 2</option>
+                                <option value="doctorat">Doctorat</option>
+                            </select>
+                        </div>
+                            
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password" placeholder="Créez un mot de passe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password">Confirmer le mot de passe</label>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez votre mot de passe" required>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+                
+                <div class="form-checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">J'accepte les <a href="#">conditions d'utilisation</a> et la <a href="#">politique de confidentialité</a></label>
+                </div>
+                
+                <button type="submit" class="form-submit">Créer mon compte</button>
+                
+                <p class="form-footer">Vous avez déjà un compte ? <a href="#">Connectez-vous</a></p>
+            </form>
+        </div>
+        
+
+        
+        
+    </div>
+    
+    
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="./Integration/Logo1.png" alt="Logo StudyHub">
+            </div>
+            <p class="footer-desc">Votre plateforme de soutien scolaire universitaire</p>
+            <div class="footer-socials">
+                <a href="#"><img src="./Integration/GitHub.png" alt="GitHub"></a>
+                <a href="#"><img src="./Integration/Twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./Integration/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./Integration/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Cours</a></li>
+                    <li><a href="#">Ressources</a></li>
+                    <li><a href="#">À propos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Tuteurs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Confidentialité</a></li>
+                    <li><a href="#">CGU</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>©Tous droits réservés.</p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
