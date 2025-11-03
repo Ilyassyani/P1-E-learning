@@ -1,6 +1,12 @@
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
 /* Variables de base */
 :root {
-    --primary-color: #6A1B9A; /* Nouveau Violet StudyHub, pour les éléments unis (titres, bordures) */
     --secondary-color: #6c757d; /* Gris secondaire */
     --background-color: #f8f9fa; /* Arrière-plan clair */
     --card-background: #ffffff;
@@ -8,10 +14,9 @@
     --heading-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --body-font: 'Open Sans', Arial, sans-serif;
     --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
-    /* Nouvelle variable pour le début du dégradé (Violet profond) */
-    --gradient-start: #6A1B9A; 
-    /* Nouvelle variable pour la fin du dégradé (Bleu-Violet) */
-    --gradient-end: #8839D6; 
+    /* Variables pour le dégradé principal */
+    --gradient-start: #667eea; 
+    --gradient-end: #764ba2; 
 }
 
 /* Réinitialisation de base */
@@ -56,7 +61,10 @@ h1, h2, h3 {
 .main-header .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color); /* Utilise le nouveau violet */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-decoration: none;
 }
 .main-header nav ul {
@@ -72,8 +80,11 @@ h1, h2, h3 {
 }
 .main-header nav ul li a:hover,
 .main-header nav ul li a.active {
-    color: var(--primary-color); /* Utilise le nouveau violet */
-    border-bottom: 2px solid var(--primary-color); /* Utilise le nouveau violet */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 2px solid var(--gradient-start);
 }
 
 /* Styles des Titres de Section */
@@ -92,15 +103,13 @@ h1, h2, h3 {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    /* CHANGEMENT: La ligne de séparation utilise le dégradé pour plus d'impact */
-    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     border-radius: 5px;
 }
 
 /* 1. Hero À Propos */
 .apropos-hero {
-    /* CHANGEMENT: Remplacement de background-color par un dégradé */
-    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end)); 
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end)); 
     color: white;
     padding: 80px 20px;
     text-align: center;
@@ -173,7 +182,7 @@ h1, h2, h3 {
 /* 4. Valeurs */
 .apropos-valeurs {
     padding: 40px 0;
-    background-color: #e9ecef; /* Section légèrement différente */
+    background-color: #e9ecef;
 }
 .apropos-valeurs-grid {
     display: grid;
@@ -186,7 +195,7 @@ h1, h2, h3 {
     padding: 25px;
     border-radius: 8px;
     text-align: center;
-    border-left: 5px solid var(--primary-color); /* Utilise le nouveau violet */
+    border-left: 5px solid var(--gradient-start);
     box-shadow: var(--shadow-light);
 }
 .apropos-valeur-icon {
@@ -194,7 +203,10 @@ h1, h2, h3 {
     margin-bottom: 10px;
 }
 .apropos-valeur-card h3 {
-    color: var(--primary-color); /* Utilise le nouveau violet */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* 5. Équipe */
@@ -225,8 +237,8 @@ h1, h2, h3 {
     margin: 0 auto 15px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid var(--primary-color); /* Utilise le nouveau violet */
-    background-color: #ccc; /* Placeholder */
+    border: 3px solid var(--gradient-start);
+    background-color: #ccc;
 }
 .apropos-equipe-photo img {
     width: 100%;
@@ -234,7 +246,10 @@ h1, h2, h3 {
     object-fit: cover;
 }
 .apropos-equipe-role {
-    color: var(--primary-color); /* Utilise le nouveau violet */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -245,14 +260,13 @@ h1, h2, h3 {
 
 /* 6. Statistiques */
 .apropos-stats {
-    /* CHANGEMENT: Remplacement de background-color par un dégradé */
-    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     color: white;
     padding: 40px 20px;
     margin: 60px 0;
     border-radius: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -283,15 +297,17 @@ h1, h2, h3 {
 }
 .apropos-cta h2 {
     font-size: 2rem;
-    color: var(--primary-color); /* Utilise le nouveau violet */
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .apropos-cta p {
     font-size: 1.2rem;
     margin-bottom: 25px;
 }
 .apropos-cta-btn {
-    /* CHANGEMENT: Utilisation de la couleur primaire violette */
-    background-color: var(--primary-color); 
+    background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
     color: white;
     border: none;
     padding: 15px 30px;
@@ -299,13 +315,12 @@ h1, h2, h3 {
     font-weight: bold;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.3s;
     text-transform: uppercase;
 }
 .apropos-cta-btn:hover {
-    /* CHANGEMENT: Teinte plus foncée pour l'effet hover */
-    background-color: #5A1480; 
     transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
 /* Footer (Minimaliste) */
@@ -317,7 +332,7 @@ h1, h2, h3 {
     font-size: 0.9rem;
 }
 
-/* Media Queries pour le Responsive (pas de changement nécessaire ici) */
+/* Media Queries pour le Responsive */
 @media (max-width: 992px) {
     .apropos-mission {
         flex-direction: column;

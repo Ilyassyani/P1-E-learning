@@ -944,9 +944,7 @@ hr
     font-size: 14px;
 }
 
-/* ========== RESPONSIVE DESIGN ========== */
 
-/* Tablettes en paysage et petits desktop */
 @media screen and (max-width: 1200px) 
 {
     .head1 
@@ -1038,7 +1036,6 @@ hr
     }
 }
 
-/* Tablettes portrait */
 @media screen and (max-width: 992px) 
 {
     .head 
@@ -1252,7 +1249,6 @@ hr
     }
 }
 
-/* Petites tablettes et grands mobiles */
 @media screen and (max-width: 768px) 
 {
     .head 
