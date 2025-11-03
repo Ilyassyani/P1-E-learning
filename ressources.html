@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources - Aide aux Études Universitaires</title>
+    <link rel="stylesheet" href="./ressources.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="head">
+        <div id="toggle" class="head1-toggle">
+            <div class="head1-rectangle"></div>
+            <div class="head1-rectangle"></div>
+            <div class="head1-rectangle"></div>
+        </div>
+        <span id="close" class="head1-close">✖</span>
+        
+        <div class="head-bg"></div>
+        
+        <div class="head1">
+            <div class="head1G">
+                <a href="./index.html">
+                    <div class="head1G-item">
+                        <h1>Accueil</h1>
+                    </div>
+                </a>
+                <a href="./cours.html">
+                    <div class="head1G-item">
+                        <h1>Cours</h1>
+                        <img src="./Integration/flechebas.png" alt="dropdown">
+                    </div>
+                </a>
+                <a href="./ressources.html">
+                    <div class="head1G-item">
+                        <h1>Ressources</h1>
+                        <img src="./Integration/flechebas.png" alt="dropdown">
+                    </div>
+                </a>
+                <a href="./tutoriels.html">
+                    <div class="head1G-item">
+                        <h1>Tutoriels</h1>
+                    </div>
+                </a>
+                <a href="./Apropos.html">
+                    <div class="head1G-item"><h1>À propos</h1></div>
+                </a>
+                <a href="./contact.html">
+                    <div class="head1G-item"><h1>Contact</h1></div>
+                </a>
+            </div>
+            
+            <div class="head1C">
+                <img src="./Integration/Logo.png" alt="Logo StudyHub" class="head1C-logo">
+            </div>
+            
+            <div class="head1D">
+                <a href="./connexion.html">    
+                    <div class="head1D-sign">
+                        <img src="./Integration/connect.png" alt="user icon">
+                        <h1>Connexion</h1>
+                    </div>
+                </a>
+                <a href="./inscription.html"> <button class="head1D-btn">S'inscrire</button></a>
+            </div>
+        </div>
+        
+        <div class="head3">
+            <h1 class="head3-title">Ressources Pédagogiques</h1>
+            <p class="head3-subtitle">Téléchargez des documents, exercices et fiches de révision</p>
+        </div>
+    </div>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <h3>850+</h3>
+            <p>Documents PDF</p>
+        </div>
+        <div class="stat-item">
+            <h3>500+</h3>
+            <p>Exercices Corrigés</p>
+        </div>
+        <div class="stat-item">
+            <h3>300+</h3>
+            <p>Fiches de Révision</p>
+        </div>
+        <div class="stat-item">
+            <h3>200+</h3>
+            <p>Examens Types</p>
+        </div>
+    </div>
+
+    <div class="filters-section">
+        <div class="filters-container">
+            <div class="filter-group">
+                <label>Matière</label>
+                <select class="filter-select">
+                    <option value="all">Toutes les matières</option>
+                    <option value="math">Mathématiques</option>
+                    <option value="physique">Physique</option>
+                    <option value="chimie">Chimie</option>
+                    <option value="info">Informatique</option>
+                    <option value="bio">Biologie</option>
+                    <option value="eco">Économie</option>
+                    <option value="langues">Langues</option>
+                    <option value="droit">Droit</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Type de Ressource</label>
+                <select class="filter-select">
+                    <option value="all">Tous les types</option>
+                    <option value="cours">Cours Complets</option>
+                    <option value="exercices">Exercices</option>
+                    <option value="fiches">Fiches de Révision</option>
+                    <option value="examens">Examens Types</option>
+                    <option value="td">TD & TP</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label>Niveau</label>
+                <select class="filter-select">
+                    <option value="all">Tous les niveaux</option>
+                    <option value="l1">Licence 1</option>
+                    <option value="l2">Licence 2</option>
+                    <option value="l3">Licence 3</option>
+                    <option value="m1">Master 1</option>
+                    <option value="m2">Master 2</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="resources-section">
+        <div class="section-header">
+            <h2>Ressources Disponibles</h2>
+            <span class="result-count">156 ressources disponibles</span>
+        </div>
+
+        <div class="resources-grid">
+            <!-- Resource Card 1 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge cours">Cours Complet</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Analyse Mathématique - Chapitre 1</h3>
+                    <p class="resource-description">Introduction aux limites et continuité avec exemples détaillés</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject math">Mathématiques</span>
+                            <span class="resource-level">L1</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">45 pages</span>
+                            <span class="resource-downloads">1.2k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 2 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge exercices">Exercices</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Mécanique Classique - TD n°3</h3>
+                    <p class="resource-description">20 exercices corrigés sur les forces et le mouvement</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject physique">Physique</span>
+                            <span class="resource-level">L2</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">28 pages</span>
+                            <span class="resource-downloads">890 téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 3 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge fiches">Fiche de Révision</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Chimie Organique - Résumé</h3>
+                    <p class="resource-description">Toutes les réactions importantes en une fiche synthétique</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject chimie">Chimie</span>
+                            <span class="resource-level">L3</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">8 pages</span>
+                            <span class="resource-downloads">2.1k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 4 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge examens">Examen Type</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Structures de Données - Examen 2023</h3>
+                    <p class="resource-description">Examen blanc avec correction détaillée</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject info">Informatique</span>
+                            <span class="resource-level">L2</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">12 pages</span>
+                            <span class="resource-downloads">1.5k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 5 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge cours">Cours Complet</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Biologie Cellulaire Avancée</h3>
+                    <p class="resource-description">Cours complet sur la signalisation cellulaire</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject bio">Biologie</span>
+                            <span class="resource-level">M1</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">65 pages</span>
+                            <span class="resource-downloads">780 téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 6 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge td">TD & TP</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Microéconomie - Série d'Exercices</h3>
+                    <p class="resource-description">15 exercices sur l'offre, la demande et l'équilibre</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject eco">Économie</span>
+                            <span class="resource-level">L1</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">22 pages</span>
+                            <span class="resource-downloads">1.1k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 7 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge fiches">Fiche de Révision</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Grammaire Anglaise Essentielle</h3>
+                    <p class="resource-description">Tous les temps et structures grammaticales</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject langues">Langues</span>
+                            <span class="resource-level">L1</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">15 pages</span>
+                            <span class="resource-downloads">3.2k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 8 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge examens">Examen Type</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Droit Constitutionnel - Annales</h3>
+                    <p class="resource-description">Sujets d'examens 2020-2023 avec corrections</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject droit">Droit</span>
+                            <span class="resource-level">L2</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">38 pages</span>
+                            <span class="resource-downloads">1.7k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Resource Card 9 -->
+            <div class="resource-card">
+                <div class="resource-header">
+                    <div class="resource-icon pdf">
+                        <span>PDF</span>
+                    </div>
+                    <div class="resource-badge cours">Cours Complet</div>
+                </div>
+                <div class="resource-content">
+                    <h3 class="resource-title">Probabilités et Statistiques</h3>
+                    <p class="resource-description">Cours complet avec théorèmes et démonstrations</p>
+                    <div class="resource-meta">
+                        <div class="resource-info">
+                            <span class="resource-subject math">Mathématiques</span>
+                            <span class="resource-level">L3</span>
+                        </div>
+                        <div class="resource-details">
+                            <span class="resource-pages">52 pages</span>
+                            <span class="resource-downloads">2.4k téléchargements</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="download-btn">
+                    <span>Télécharger</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1V11M8 11L11 8M8 11L5 8M2 15H14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="load-more">
+            <button class="load-more-btn">Voir plus de ressources</button>
+        </div>
+    </div>
+
+    <div class="contribution-section">
+        <div class="contribution-content">
+            <div class="contribution-text">
+                <h2>Vous avez des ressources à partager ?</h2>
+                <p>Contribuez à notre bibliothèque et aidez d'autres étudiants à réussir</p>
+            </div>
+            <button class="contribution-btn">Partager une ressource</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="./Integration/Logo1.png" alt="Logo StudyHub">
+            </div>
+            <p class="footer-desc">Votre plateforme de soutien scolaire universitaire</p>
+            <div class="footer-socials">
+                <a href="https://github.com/Ilyassyani/P1-E-learning"><img src="./Integration/GitHub.png" alt="GitHub"></a>
+                <a href="#"><img src="./Integration/Twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="./Integration/Instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="./Integration/Linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-col">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./cours.html">Cours</a></li>
+                    <li><a href="./ressources.html">Ressources</a></li>
+                    <li><a href="./Apropos.html">À propos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="#">Tuteurs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Légal</h3>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Confidentialité</a></li>
+                    <li><a href="#">CGU</a></li>
+                    <li><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>©Tous droits réservés.</p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
